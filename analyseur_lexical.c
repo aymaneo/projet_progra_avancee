@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include<string.h>
+#include <string.h>
 #include <ctype.h>
 #include "jeton.h"
 #include "analyseur_lexical.h"
 #define max 100
 
 
-typejeton analyse_lexicale(char *erreur_pg,char c[])
+typejeton analyse_lexicale(int *erreur_pg, char c[])
 {
     typejeton tab[max];
     char ch3[3];
